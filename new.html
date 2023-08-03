@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My Web Page</h1>
+
+    <button id="myButton">Click me</button>
+
+    <div id="myDiv" class="hidden">
+      <p>Hello, world!</p>
+    </div>
+
+    <script>
+      var button = document.getElementById("myButton");
+      var div = document.getElementById("myDiv");
+      button.addEventListener("click", function() {
+        div.classList.remove("hidden");
+      });
+    </script>
+
+  </body>
+</html>

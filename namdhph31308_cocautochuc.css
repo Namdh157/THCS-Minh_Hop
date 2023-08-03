@@ -1,0 +1,256 @@
+*{
+    margin: 0;box-sizing: border-box;padding: 0;
+}
+body {
+    background-image: url(/img/hinh-nen-powerpoint-trong-dong-lam-son-cuc-dep-cua-lich-su_034831910.png);
+}
+#body{
+    width:1200px;
+    margin: 0 auto;
+}
+#header{
+    height: 150px;
+    background-image: url(/img/cucu.png);
+    background-size: 100% 100%;
+}
+/*hết headeer */
+#menu{
+    height:50px;
+    background-color:#4372e9;
+    display: flex;
+    justify-content: center;
+}
+#menu ul{
+    padding-left: 0;
+}
+#menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    line-height: 50px;
+    font-variant: small-caps;
+    
+}
+#menu ul li a:hover{
+    color: #f6e58d;
+    text-decoration: none;
+}
+#menu ul ul{
+    position: absolute;
+    display: none;
+
+}
+#menu ul ul a{
+    display: block;
+    padding-right: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    font-variant: small-caps;
+}
+#menu ul li:hover ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #4372e9;
+    width:max-content;
+    z-index: 1;
+}
+#menu ul ul li::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    width: 0;
+    height: 100%;
+    background-color: #e74c3c;
+    transition: .25s;
+    z-index: -1;
+}
+#menu ul ul li:hover::before{
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+/*end menu */
+#slide{
+    height: 35px;
+    background-color: #bdc3c7;
+}
+#slide marquee p{
+    font-size: 30px;
+    line-height:35px ;
+    color:#2e86de;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* end slide */
+/*start content */
+#content{
+    height: 900px;
+    background-color:white;
+}
+/* start left */
+#left{
+    width: 300px;
+    height: 100%;
+    float: left;
+    background-color:white;
+}
+.idea{
+    border: 1px solid black;
+    border-radius: 2%;
+    margin: 10px 20px;
+}
+.title1{
+    background-color: cornflowerblue;
+    text-align: center;
+    border-bottom: 1px solid black; 
+    padding-top: 0px;  
+}
+.title1 h3{
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.top h4{
+    margin:0 30px;
+}
+.radio{
+    font-size: large;
+    line-height: 39px;
+    margin-left: 18px;
+}
+.clearfix{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    padding: 5px;
+    color: white;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+    border: none;
+}
+.button:active{
+    background-color:#3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+/* end left */
+
+#right{
+    width: 300px;
+    height: 100%;
+    float: left;
+    background-color: white;
+}
+.lich{
+    margin-left: 39px;
+}
+.tab{
+    margin: 10px 20px;
+}
+.past h3{
+    margin-left: 20px;
+    padding: 3px;
+}
+.past{
+    border: 1px solid black;
+    padding: 6px;
+}
+.past p{
+    margin-left: 25px;
+}
+/*end right */
+/* start main */
+#main{
+    width: 600px;
+    float: left;
+    display: block;
+    background-color:white;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 18px;
+    margin: 13px;
+    font-weight: bolder;
+}
+.title p{
+    font-size: 23px;
+}
+
+table{
+    margin: 18px;
+    width: 95%;
+    border-collapse: collapse;
+    background-color: transparent;
+    border-spacing: 0;
+    
+}
+table > thead tr th, table > tbody >tr > td{
+    padding: 10px;
+}
+table th{
+    font-size: 15px;
+}
+table caption{
+    color: #4372e9;
+    font-size: 20px;
+    font-weight:bolder;;
+    text-align: left;
+    margin-bottom: 10px;
+}
+table a{
+    text-decoration: none;
+    color:#4372e9;
+}
+.cap{
+    color: #4372e9;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.text-center{
+    text-align: center;
+}
+
+
+
+/* end main content */
+/* end main */
+/*start footer */
+footer{
+    text-align: center;
+    background-color:#b2bec3;
+    color:#2d3436;
+    height: 300px;
+    font-size: 16px;
+}
+.clear{
+    width: 100%;
+    height: 80px;
+    background-color: #2d3436;
+}
+footer a{
+    color: #2d3436;
+    text-decoration: none;
+}
